@@ -21,4 +21,22 @@ func main() {
 	default:
 		fmt.Println("Mês inválido.")
 	}
+
+	//Crie um programa que recebe a idade de uma pessoa e classifique-a em uma faixa etária (Criança, adolescente, adulto ou idoso)
+     var idade int
+	fmt.Print("Digite a idade: ")
+	fmt.Scan(&idade)
+
+	switch {
+	case idade < 0:
+		fmt.Println("Idade inválida.")
+	case idade <= 12:
+		fmt.Println("Criança")
+	case idade <= 17:
+		fmt.Println("Adolescente")
+	case idade <= 59:
+		fmt.Println("Adulto")
+	default:
+		fmt.Println("Idoso")
+	}
 }
